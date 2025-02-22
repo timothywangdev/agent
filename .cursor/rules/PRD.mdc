@@ -1,0 +1,138 @@
+---
+description: PRD: AI-Powered Search Engine for LLMs
+globs: 
+---
+# AI-Powered Search Engine for LLMs - Product Requirements Document (PRD)
+
+## 1. Overview
+### **Product Name:** TBD (e.g., "AI-First Search" or "LLM Search Hub")
+### **Author:** [Your Name]
+### **Last Updated:** [Date]
+### **Status:** Draft
+
+### **Background & Motivation**
+Traditional search engines are designed for humans, returning ranked links based on text content. However, LLMs (large language models) require structured, real-time, and API-accessible data to deliver high-quality responses. Existing solutions like Google Search and Perplexity AI rely on traditional web search and are inadequate for structured information retrieval, on-chain data, and third-party APIs.
+
+This PRD outlines a **Google for AI**—a search engine built **for LLMs, not humans**. The goal is to create a **structured, API-first, and vector-based search engine** that serves LLMs and AI agents, prioritizing **structured data, open API integrations, and real-time information access.**
+
+---
+
+## 2. Goals & Objectives
+
+### **Primary Goals:**
+1. **LLM-Optimized Search** – Provide LLMs with structured data instead of plain text pages.
+2. **Data Marketplace for AI Agents** – Enable third-party data providers to contribute structured datasets and get paid based on query usage.
+3. **Hybrid Retrieval System** – Combine vector search (semantic) with structured database queries for accuracy and efficiency.
+4. **Real-Time Data Integration** – Provide up-to-date financial, crypto, and market data via API-based ingestion.
+5. **API-First Design** – Built as a **machine-consumable search engine**, accessible via API for AI applications.
+
+### **Key Use Cases:**
+- AI-powered **financial analysis** (real-time stock/crypto data, earnings reports, sentiment analysis)
+- AI-driven **research assistants** (legal, academic, enterprise knowledge search)
+- AI agents executing **autonomous tasks** (e.g., an AI assistant retrieving financial reports for an investment strategy)
+
+---
+
+## 3. Features & Requirements
+
+### **3.1 Core Search Capabilities**
+- ✅ **Vector-Based Semantic Search** (retrieve relevant documents based on meaning, not just keywords)
+- ✅ **Structured Query Support** (SQL-based retrieval for financial and crypto datasets)
+- ✅ **Multi-Source Integration** (aggregate results from APIs, databases, and real-time feeds)
+- ✅ **Retrieval-Augmented Generation (RAG)** (improve LLM responses by grounding them in trusted sources)
+
+### **3.2 Data Sources & Indexing**
+- **Financial Data APIs** (stock prices, earnings reports, economic indicators)
+- **Crypto On-Chain Data** (real-time blockchain analytics, whale movements, DeFi activity)
+- **News & Market Sentiment** (financial news aggregators, social sentiment analysis)
+- **Enterprise & Internal Data** (support for private indexes and enterprise knowledge bases)
+
+### **3.3 Open Data Contribution & Monetization**
+- **Data Provider Marketplace** – Allow third parties to provide structured data sources (e.g., premium stock market insights, on-chain analytics, etc.)
+- **Query-Based Monetization** – Pay data providers per query hit, incentivizing high-quality data sources
+- **AI Search API Subscriptions** – Monetize via tiered API access (freemium for basic queries, paid for high-volume or premium data)
+
+### **3.4 User & AI Interaction Modes**
+- **AI-Only API Access** – Search results are formatted for LLMs (JSON output with structured metadata)
+- **Human-Readable Mode** – Simple web UI for developers to test queries and review data
+- **AI Agent Integration** – Allow LLM-powered agents to use search autonomously (e.g., an investment AI retrieving and analyzing stock data)
+
+---
+
+## 4. Technical Requirements
+
+### **4.1 Architecture**
+- **Hybrid Search Engine** (Vector DB + SQL for structured queries)
+- **OpenAPI for AI Access** (RESTful and GraphQL endpoints for structured data retrieval)
+- **Serverless & Scalable Backend** (Cloud-based, scalable indexing & retrieval pipeline)
+- **Fine-Tuned LLMs for Search Ranking** (Re-rank results based on AI model optimization)
+
+### **4.2 AI Model Integration**
+- Support for **retrieval-augmented generation (RAG)** to enhance AI search responses
+- Fine-tuned models for **domain-specific queries** (finance, legal, academic, etc.)
+- Option for **local/private model hosting** (for enterprise security requirements)
+
+### **4.3 Data Compliance & Security**
+- **Access Control for Sensitive Data** (e.g., authentication for private datasets)
+- **GDPR & Compliance-Ready** (Data security policies for enterprise customers)
+- **Anti-Hallucination Mechanisms** (Ensure AI-generated responses are verifiable)
+
+---
+
+## 5. Monetization & Business Model
+
+### **5.1 Revenue Streams**
+1. **Subscription-Based API Access** – Paid plans for enterprises & developers
+2. **Per-Query Pricing for Premium Data** – Charge micro-payments for access to specialized datasets
+3. **Data Provider Revenue Sharing** – Allow third-party data providers to earn based on API usage
+4. **Enterprise Custom Solutions** – Private deployments & fine-tuned AI search engines
+
+### **5.2 Competitive Advantage**
+- **Not Just a Search Engine** – AI-first, **structured data for LLMs**, unlike Perplexity AI or Google
+- **Real-Time Market Data** – Unlike static search indexes, supports **live financial & crypto data**
+- **Open Contribution Model** – Incentivize **data providers** to enrich the platform
+
+---
+
+## 6. Competitive Landscape
+
+### **6.1 Existing AI Search Players**
+| Competitor       | Strengths | Weaknesses |
+|-----------------|-----------|-------------|
+| Google Search   | Largest index, best general search | Not AI-optimized, paywalled content issues |
+| Perplexity AI   | AI-enhanced search with citations | Still reliant on web crawling, lacks structured data API |
+| BloombergGPT   | Finance-specific AI model | Expensive, closed ecosystem |
+| Neeva AI       | AI-powered consumer search | Shut down, business model failed |
+
+### **6.2 Why We Win**
+- **Specialized, Structured Search for LLMs** – Unlike Perplexity & OpenAI’s web browsing
+- **Real-Time Financial & Crypto Data** – Unlike Google or static web search
+- **Marketplace Model** – Incentivizing data providers (unlike closed systems like Bloomberg)
+- **API-First** – Designed for AI Agents, not human browsing
+
+---
+
+## 7. Future Vision & Roadmap
+
+### **7.1 Phase 1 (MVP - 3-6 Months)**
+✅ Build **core hybrid search engine** (Vector DB + SQL Query System)
+✅ Integrate **real-time financial & crypto APIs**
+✅ Launch **developer-friendly AI Search API** (JSON output for AI consumption)
+✅ Implement **basic marketplace for data providers**
+
+### **7.2 Phase 2 (Scaling - 6-12 Months)**
+✅ Expand to **legal, academic, and enterprise search**
+✅ Improve **multi-agent AI orchestration** (allow AI workflows across multiple data sources)
+✅ Secure **enterprise partnerships** (hedge funds, research firms, AI-first businesses)
+✅ Add **self-learning AI features** (adaptive query refinement, better contextual memory)
+
+### **7.3 Phase 3 (Disruption - 12+ Months)**
+✅ AI Agents become the **primary consumers of the web**, replacing traditional search
+✅ Introduce **AI-native content formats** (structured data repositories, knowledge graphs)
+✅ Expand into **multi-modal AI search** (text + images + real-time analytics)
+✅ Position as the **dominant search layer for all AI assistants**
+
+---
+
+## 8. Conclusion
+An AI-first search engine for LLMs is the next evolution in AI-driven information retrieval. By focusing on structured data, real-time integration, and an open marketplace, we can create the **Google of AI Agents**, transforming how AI interacts with information.
