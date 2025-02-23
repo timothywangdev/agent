@@ -1,42 +1,21 @@
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { GeistSans } from "geist/font/sans";
-import { Toaster } from "sonner";
-import { cn } from "@/lib/utils";
-import { Navbar } from "@/components/navbar";
+import { RootLayout } from "./components/layout/root-layout";
+import { Toaster } from "sonner"
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AI SDK Python Streaming Preview",
-  description:
-    "Use the Data Stream Protocol to stream chat completions from a Python endpoint (FastAPI) and display them using the useChat hook in your Next.js application.",
-  openGraph: {
-    images: [
-      {
-        url: "/og?title=AI SDK Python Streaming Preview",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: [
-      {
-        url: "/og?title=AI SDK Python Streaming Preview",
-      },
-    ],
-  },
+  title: "AI Agent Platform",
+  description: "An AI-powered platform for conversations and data providers",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head></head>
-      <body className={cn(GeistSans.className, "antialiased dark")}>
-        <Toaster position="top-center" richColors />
-        <Navbar />
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <RootLayout>{children}</RootLayout>
+        <Toaster />
       </body>
     </html>
   );
